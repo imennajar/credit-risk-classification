@@ -132,7 +132,7 @@ def balanced_accuracy(y_true, y_pred):
     return balanced_accuracy
 ```
 
-###  Generate a confusion matrix
+#####  Generate a confusion matrix
 ```
 def conf_matrix(y_true, y_pred, model_name):
     """
