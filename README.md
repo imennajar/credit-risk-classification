@@ -47,3 +47,17 @@ In this Challenge, we will use various techniques to train and evaluate a model 
   - The results
 
   - A summary
+
+## Program:
+
+### Tools:
+
+- Visual Studio Code (VSCode): is a free, open-source code editor developed by Microsoft.
+
+- Python: is a high-level programming language known for its simplicity, readability, and versatility. 
+
+- Pandas: is a Python library for data manipulation and analysis.
+
+- sklearn: is a Python library providing a wide range of tools for machine learning.
+
+- imblearn: is a Python library used for handling imbalanced datasets in machine learning. 
