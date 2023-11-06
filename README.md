@@ -86,6 +86,7 @@ def logic_reg_model(X, y):
     model.fit(X, y)
     return model
 ```
+
 ##### Counts the distinct values of the label
 ```
 def count_distinct_values(series):
@@ -155,6 +156,7 @@ def conf_matrix(y_true, y_pred, model_name):
     # Retutn the confusion matrix
     return confusion
 ```
+
 ##### Generate a classification report
 ```
 def class_report(y_true, y_pred, model_name, target_names):
@@ -178,5 +180,32 @@ def class_report(y_true, y_pred, model_name, target_names):
     # Display the result
     print(f"Classification Report for {model_name}:")
     print(report)
+```
+
+#### Main Code
+
+##### Split the data into training and testing datasets:
+```
+X_train, X_test, y_train, y_test = train_test_split(X, 
+                                                    y, 
+                                                    random_state=rs,
+                                                    stratify=y 
+                                                    )
+X_train.shape
+```
+
+#### Save the predictions
+```
+y_pred_train = model_training.predict(X_test)
+```
+
+#### Resample the data
+```
+# Instantiate the random oversampler model
+ros = RandomOverSampler(random_state=rs)
+
+# Fit the original training data to the random_oversampler model
+X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
+len(X_resampled)
 ```
 
