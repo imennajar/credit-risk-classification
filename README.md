@@ -40,7 +40,7 @@ In this Challenge, we will use various techniques to train and evaluate a model 
 
 * Write a Credit Risk Analysis Report
 
-The Anakysis Report contains: 
+  The Anakysis Report contains: 
   
   - An overview of the analysis
 
