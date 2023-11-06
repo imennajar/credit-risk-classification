@@ -209,21 +209,21 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 len(X_resampled)
 ```
 
-# credit risk analysis report
-## "Machine Learning Analysis for Loan Status Prediction: Model Comparison and Recommendations
+## credit risk analysis report
+### "Machine Learning Analysis for Loan Status Prediction: Model Comparison and Recommendations
 
-###Overview of the Analysis
+#### Overview of the Analysis
 
-#### Analysis Purpose:
+##### Analysis Purpose:
 The purpose of this analysis is to create a Logistic Regression Model that can effectively predict loan-related outcomes for future unseen data. The goal is to develop a model that can assist in making informed decisions about loan applications.
 
-#### Data Overview:
+##### Data Overview:
 The data used for this analysis is about financial information related to loans and loan applicants situation. The variables we utilize include the loan amount, the interst rate, the borrower's income, the borrower's debt to income, the borrower's total number of accounts, and the borrower's derogatory marks. These variables serve as independent features, and our objective is to predict the loan status, which is the dependent variable.
 
-#### Understanding the Predictive Target:
+##### Understanding the Predictive Target:
 The variable we were trying to predict in this analysis is the loan status, and it is a binary column where it takes the value 1 if the loan is considered a high-risk loan and 0 if the loan is considered a healthy loan. In our dataset, which consists of a total of 77,536 rows, we have 75,036 rows corresponding to healthy loan cases and 2,500 rows corresponding to high-risk loan cases. This indicates that our data is imbalanced, with a larger number of healthy loan cases compared to high-risk loan cases.
 
-#### Machine Learning Process Stages:
+##### Machine Learning Process Stages:
 The stages of the machine learning process we went through as part of this analysis:
 
   1- Preprocess:
@@ -254,7 +254,7 @@ The stages of the machine learning process we went through as part of this analy
 
     Step 4: Evaluate the model’s performance by calculating the accuracy score of the model, generating a confusion matrix, and printing the classification report.
 
-#### Methods Employed:
+##### Methods Employed:
 In this analysis, we utilized several methods to facilitate the machine learning process:
 
 - LogisticRegression: This method was employed to instantiate and implement a logistic regression model, which plays a pivotal role in predicting loan statuses.
@@ -266,7 +266,7 @@ In this analysis, we utilized several methods to facilitate the machine learning
 - predict method: Finally, this method allowed the process of making predictions with the model, serving as the final step in the analysis, which ultimately assists in informed decision-making regarding loan applications.
 
 
-### Results
+#### Results
 
 Description of the balanced Accuracy, precision, and recall scores of all used Machine Learning Models:
 
@@ -288,9 +288,9 @@ Description of the balanced Accuracy, precision, and recall scores of all used M
 
 These scores offer valuable insights into the performance of each model, allowing the evaluation of their ability to predict loan outcomes accurately.
 
-### Summary: Machine Learning Model Evaluation and Recommendations
+#### Summary: Machine Learning Model Evaluation and Recommendations
 
-#### Performance Metrics Comparison: Model 1 vs. Model 2
+##### Performance Metrics Comparison: Model 1 vs. Model 2
 * Performance Metrics for Model 1: Logistic Regression Model with the Original Data:
 
   - Balanced accuracy: 94%
@@ -315,10 +315,10 @@ These scores offer valuable insights into the performance of each model, allowin
 
   - Recall (Healthy Loan): 100%
 
-#### Recommendation: Choosing the Best Model:
+##### Recommendation: Choosing the Best Model:
 Based on the results provided, Model 2 is the superior choice, offering a higher balanced accuracy and perfect recall for both classes. 
 
-#### Consideration of Model Choice:
+##### Consideration of Model Choice:
 Model 2 is recommended for its superior performance. However, it's important to consider the specific objectives and priorities of the lending institution.
 If the institution's primary goal is to minimize the risk of lending to high-risk applicants (predicting '1's), then Model 2 excels in capturing these cases. On the other hand, if maintaining an overall high level of accuracy for both high-risk and low-risk loans (predicting '0's) is a top priority, Model 2 also performs exceptionally well.
 In summary, the choice of model should align with the institution's specific objectives, whether it's focused on predicting '1's or '0's, and it should be made while being mindful of potential overfitting risks.
