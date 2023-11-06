@@ -194,12 +194,12 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 X_train.shape
 ```
 
-#### Save the predictions
+##### Save the predictions
 ```
 y_pred_train = model_training.predict(X_test)
 ```
 
-#### Resample the data
+##### Resample the data
 ```
 # Instantiate the random oversampler model
 ros = RandomOverSampler(random_state=rs)
