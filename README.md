@@ -210,7 +210,7 @@ len(X_resampled)
 ```
 
 ## credit risk analysis report
-### "Machine Learning Analysis for Loan Status Prediction: Model Comparison and Recommendations
+### Machine Learning Analysis for Loan Status Prediction: Model Comparison and Recommendations
 
 #### Overview of the Analysis
 
